@@ -65,6 +65,13 @@ body{
     display: block;
 }
 
+@media(max-width:600px) {
+    .message-box{
+        width: 90%;
+        margin: auto;
+    }
+}
+
 /* message-box-header */
 
 .message-box .message-box-header{
