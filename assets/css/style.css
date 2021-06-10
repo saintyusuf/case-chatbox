@@ -1,0 +1,268 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #d5d5d5;
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* MESSAGE BOX BUTTON */
+
+.message-box-button{
+    position: fixed;
+    right: 20px;
+    bottom: 25px;
+    background-color: #f5f5f5;
+    border-radius: 100%;
+    padding: 15px;
+    box-shadow: 0 5px 10px -5px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.message-box-button:hover {
+    box-shadow: 0 5px 15px -4px rgba(0,0,0,0.5);
+}
+
+.message-box-button svg{
+    font-size: 36px;
+    color: #222;
+}
+
+.message-box-button .message-alert{
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    right: 5px;
+    top: 5px;
+    position: absolute;
+    border-radius: 100%;
+}
+
+/* MESSAGE BOX */
+
+.message-box {
+    display: none;
+    background-color: #fff;
+    width: 350px;
+    height: 400px;
+    position: fixed;
+    right: 20px;
+    bottom: 115px;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px -5px rgba(0,0,0,0.3);
+    overflow: hidden;
+
+}
+
+.message-box.show {
+    display: block;
+}
+
+/* message-box-header */
+
+.message-box .message-box-header{
+    background-color: #fafafa;
+    overflow: hidden;
+    display: flex;
+}
+
+.message-box .message-box-closer{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.message-box .message-box-closer svg{
+    font-size: 15px;
+    color: #a5a5a5;
+}
+
+.message-box .message-box-header-photo{
+    float: left;
+    padding: 15px;
+    position: relative;
+}
+
+.message-box .message-box-header-photo img{
+    width: 55px;
+    border-radius: 100%;
+    border: 1px solid #d5d5d5;
+}
+.message-box .message-box-header-photo .user-available{
+    width: 12.5px;
+    height: 12.5px;
+    background-color: rgb(0, 239, 0);
+    right: 18px;
+    bottom: 18px;
+    position: absolute;
+    border-radius: 100%;
+    border: 2px solid #fafafa;;
+}
+
+.message-box .message-box-header-texts{
+    float: right;
+    padding: 15px 15px 15px 5px;
+}
+
+.message-box .message-box-header-name{
+
+}
+
+.message-box .message-box-header-name h3{
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+.message-box .message-box-header-status{
+
+}
+
+.message-box .message-box-header-status p{
+    font-size: 14px;
+    margin: 0;
+    color: #555;
+
+}
+
+/* message-box-messages */  
+
+.message-box .message-box-messages{
+    background-color: #fff;
+}
+
+.message-box .message-box-messages .message{
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.message-box .message-box-messages .message-time{
+    padding-bottom: 12.5px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.message-box .message-box-messages .message-time p{
+    color: #d8d8d8;
+    font-size: 12px;
+    margin:0;
+}
+
+.message-box .message-box-messages .message-photo{
+    float: left;
+    padding-right: 10px;
+}
+
+.message-box .message-box-messages .message-photo img{
+    width: 35px;
+    border-radius: 100%;
+    border: 1px solid #d5d5d5;
+}
+
+.message-box .message-box-messages .message-text{
+    float: right;
+    padding: 5px 10px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    border-top-left-radius: 3px;
+}
+
+.message-box .message-box-messages .message-text p{
+    margin: 0;
+    color: #333;
+    font-size: 15px;
+}
+
+/* message-box-footer */
+
+.message-box .message-box-footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 0;
+}
+
+.message-box .message-box-footer-text{
+    text-align: center;
+    padding: 7.5px 0;
+}
+
+.message-box .message-box-footer-text p{
+    font-weight: 500;
+    font-size: 18px;
+    color: #111;
+    margin: 0;
+}
+
+.message-box .message-box-footer-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 15px;
+}
+
+.message-box .message-box-footer-buttons .message-box-footer-button-cover{
+    width: 33.33%;
+    padding: 0 5px;
+}
+
+.message-box .message-box-footer-buttons .message-box-footer-button{
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 7.5px;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+.message-box .message-box-footer-buttons .message-box-footer-button svg{
+    color: white;
+    font-size: 20px;
+}
+
+.message-box .message-box-footer-buttons .message-box-footer-button.whatsapp{
+    background-color: rgb(0, 220, 0);
+}
+
+.message-box .message-box-footer-buttons .message-box-footer-button.whatsapp:hover{
+    background-color: rgb(0, 200, 0);
+}
+
+.message-box .message-box-footer-buttons .message-box-footer-button.telegram{
+    background-color: rgb(55, 102, 203)
+}
+
+.message-box .message-box-footer-buttons .message-box-footer-button.telegram:hover{
+    background-color: rgb(48, 88, 175)
+}
+
+.message-box .message-box-footer-buttons .message-box-footer-button.call{
+    background-color: rgb(153, 42, 222)
+}
+
+.message-box .message-box-footer-buttons .message-box-footer-button.call:hover{
+    background-color: rgb(131, 36, 190)
+}
+
+.message-box .message-box-footer-buttons .message-box-footer-button.call svg{
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
