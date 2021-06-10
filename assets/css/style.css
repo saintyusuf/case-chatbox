@@ -217,7 +217,7 @@ body{
 .message-box .message-box-footer-buttons{
     display: flex;
     flex-wrap: wrap;
-    padding: 0 15px;
+    padding: 0 10px;
 }
 
 .message-box .message-box-footer-buttons .message-box-footer-button-cover{
